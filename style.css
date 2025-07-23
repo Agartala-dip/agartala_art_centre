@@ -94,19 +94,25 @@ body {
   font-weight: bold;
 }
 .scrolling-wrapper {
+.scrolling-container {
   width: 100%;
+  height: 50px;
   overflow: hidden;
-  background-color: #fff0db;
-  padding: 20px 0;
+  background: #f8f8f8;
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
   position: relative;
 }
 
 .scrolling-text {
   position: absolute;
   white-space: nowrap;
+  color: #e74c3c;
   font-size: 24px;
-  color: #c0392b;
-  animation: scrollText 35s linear infinite;
+  font-weight: bold;
+  animation: scrollText 12s linear infinite;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 @keyframes scrollText {
@@ -114,7 +120,7 @@ body {
     left: 100%;
   }
   100% {
-    right: 100%;
+    left: -100%;
   }
 }
 /* Intro and other sections */
