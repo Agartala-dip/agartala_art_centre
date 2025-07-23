@@ -95,11 +95,11 @@ body {
 }
 /* Full-width container */
 .scrolling-wrapper {
-  width: 100vw;
+  width: 10px.  20ppx;
   overflow: hidden;
   background-color: #ffeedd;
-  border-top: 2px solid #cc9966;
-  border-bottom: 2px solid #cc9966;
+  border-top: 4px solid #cc9966;
+  border-bottom: 4px solid #cc9966;
   position: relative;
 }
 
@@ -122,33 +122,27 @@ body {
   }
 }
 
-.scrolling-images {
-/* Scrolling image container */
 .scrolling-image-wrapper {
   width: 100vw;
   overflow: hidden;
-  background-color: #f9f9f9;
-  border-top: 2px solid #ccc;
-  border-bottom: 2px solid #ccc;
+  background-color: #fff;
   padding: 10px 0;
 }
 
-/* Image scrolling content */
 .scrolling-images {
   display: inline-block;
   white-space: nowrap;
-  animation: scrollImages 20s linear infinite reverse; /* reverse = left to right */
+  animation: scrollImages 25s linear infinite reverse; /* left to right */
 }
 
 .scrolling-images img {
-  width: 200px;
+  width: 220px;
   height: auto;
-  margin: 0 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  margin: 0 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
 
-/* Keyframes for scrolling */
 @keyframes scrollImages {
   0% {
     transform: translateX(-100%);
