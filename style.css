@@ -95,11 +95,11 @@ body {
 }
 /* Full-width container */
 .scrolling-wrapper {
-  width: 10px.  20ppx;
+  width: 100px.  20ppx;
   overflow: hidden;
   background-color: #ffeedd;
-  border-top: 12px solid #cc9966;
-  border-bottom: 12px solid #cc9966;
+  border-top: 30px solid #cc9966;
+  border-bottom: 40px solid #cc9966;
   position: relative;
 }
 
@@ -107,10 +107,10 @@ body {
 .scrolling-text {
   display: inline-block;
   white-space: nowrap;
-  font-size: 20px;
+  font-size: 120px;
   color: #333;
   padding-left: 100%; /* Start off-screen to the right */
-  animation: scrollText 15s linear infinite;
+  animation: scrollText 30s linear infinite;
 }
 
 @keyframes scrollText {
