@@ -93,44 +93,62 @@ body {
   margin-top: 20px;
   font-weight: bold;
 }
-.scrolling-text {
+/* Full-width container */
+.scrolling-wrapper {
+  width: 100vw;
   overflow: hidden;
-  white-space: nowrap;
-  background-color: #f0f0f0;
-  padding: 10px;
-  font-size: 18px;
+  background-color: #ffeedd;
+  border-top: 2px solid #cc9966;
+  border-bottom: 2px solid #cc9966;
+  position: relative;
 }
 
-.scrolling-text span {
+/* Scrolling text */
+.scrolling-text {
   display: inline-block;
-  padding-left: 100%;
-  animation: scrollText 12s linear infinite;
+  white-space: nowrap;
+  font-size: 20px;
+  color: #333;
+  padding-left: 100%; /* Start off-screen to the right */
+  animation: scrollText 15s linear infinite;
 }
 
 @keyframes scrollText {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0%);
   }
   100% {
     transform: translateX(-100%);
   }
 }
+
 .scrolling-images {
-  display: flex;
-  width: 100%;
+/* Scrolling image container */
+.scrolling-image-wrapper {
+  width: 100vw;
   overflow: hidden;
-  white-space: nowrap;
-  background-color: #fff8f0;
+  background-color: #f9f9f9;
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
   padding: 10px 0;
 }
 
-.scrolling-images img {
-  animation: scrollImages 15s linear infinite;
-  margin-right: 30px;
-  height: auto;
-  width: 200px;
+/* Image scrolling content */
+.scrolling-images {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scrollImages 20s linear infinite reverse; /* reverse = left to right */
 }
 
+.scrolling-images img {
+  width: 200px;
+  height: auto;
+  margin: 0 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Keyframes for scrolling */
 @keyframes scrollImages {
   0% {
     transform: translateX(-100%);
