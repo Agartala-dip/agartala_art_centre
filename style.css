@@ -123,33 +123,7 @@ body {
 }
 
 .scrolling-image-wrapper {
-  width: 50vw;
-  overflow: hidden;
-  background-color: #fff;
-  padding: 10px 0;
-}
 
-.scrolling-images {
-  display: inline-block;
-  white-space: nowrap;
-  animation: scrollImages 25s linear infinite reverse; /* left to right */
-}
-
-.scrolling-images img {
-  width: 50px;
-  height: auto;
-  margin: 0 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-}
-
-@keyframes scrollImages {
-  0% {
-    transform: translateX(-100%);
-  }
-  50% {
-    transform: translateX(100%);
-  }
 }
 /* Intro and other sections */
 .intro, .mission, .highlights {
