@@ -93,44 +93,32 @@ body {
   margin-top: 4px;
   font-weight: bold;
 }
-/* Full-width container */
-.scrolling-wrapper {
-  width: 100px.  20ppx;
-  overflow: hidden;
-  background-color: #ffeedd;
-  border-top: 30px solid #cc9966;
-  border-bottom: 40px solid #cc9966;
-  position: relative;
-}
 .scrolling-wrapper {
   width: 100%;
   overflow: hidden;
-  background-color: #f0f0f0; /* optional background */
+  background-color: #fff5e1;
   padding: 10px 0;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
+  border-top: 2px solid #ff9900;
+  border-bottom: 2px solid #ff9900;
 }
 
 .scrolling-text {
   display: inline-block;
   white-space: nowrap;
-  font-size: 24px; /* Change text size as needed */
-  color: #222;
-  animation: scroll-left 12s linear infinite;
+  font-size: 24px;
+  color: #d9534f;
+  padding-left: 100%;
+  animation: scroll-left 15s linear infinite;
 }
 
-/* Keyframes for scrolling animation */
 @keyframes scroll-left {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0%);
   }
   100% {
     transform: translateX(-100%);
   }
 }
-  }
-}
-
 .scrolling-image-wrapper {
 
 }
