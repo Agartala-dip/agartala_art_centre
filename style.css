@@ -102,23 +102,32 @@ body {
   border-bottom: 40px solid #cc9966;
   position: relative;
 }
+.scrolling-wrapper {
+  width: 100%;
+  overflow: hidden;
+  background-color: #f0f0f0; /* optional background */
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
 
-/* Scrolling text */
 .scrolling-text {
   display: inline-block;
   white-space: nowrap;
-  font-size: 120px;
-  color: #333;
-  padding-left: 100%; /* Start off-screen to the right */
-  animation: scrollText 30s linear infinite;
+  font-size: 24px; /* Change text size as needed */
+  color: #222;
+  animation: scroll-left 12s linear infinite;
 }
 
-@keyframes scrollText {
+/* Keyframes for scrolling animation */
+@keyframes scroll-left {
   0% {
-    transform: translateX(0%);
+    transform: translateX(100%);
   }
   100% {
-    transform: translateX(100%);
+    transform: translateX(-100%);
+  }
+}
   }
 }
 
