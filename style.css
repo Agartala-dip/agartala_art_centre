@@ -89,15 +89,15 @@ body {
 
 .greeting-text {
   color: #d84315;
-  font-size: 4px;
-  margin-top: 4px;
+  font-size: 6px;
+  margin-top: 6px;
   font-weight: bold;
 }
 .scrolling-wrapper {
   width: 100%;
   overflow: hidden;
   background-color: #fff0db;
-  padding: 10px 0;
+  padding: 20px 0;
   position: relative;
 }
 
@@ -114,7 +114,7 @@ body {
     left: 100%;
   }
   100% {
-    right: -100%;
+    right: 100%;
   }
 }
 .scrolling-image-wrapper {
