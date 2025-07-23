@@ -253,7 +253,7 @@ body {
 }
 
 .gallery-item {
-  width: 45%;         /* Adjust width as needed */
+  width: 100%;         /* Adjust width as needed */
   height: 200px;      /* Set height to control vertical space (50%) */
   overflow: hidden;
   position: relative;
