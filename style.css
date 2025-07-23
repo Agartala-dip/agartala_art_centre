@@ -89,8 +89,8 @@ body {
 
 .greeting-text {
   color: #d84315;
-  font-size: 22px;
-  margin-top: 20px;
+  font-size: 4px;
+  margin-top: 4px;
   font-weight: bold;
 }
 /* Full-width container */
@@ -98,8 +98,8 @@ body {
   width: 10px.  20ppx;
   overflow: hidden;
   background-color: #ffeedd;
-  border-top: 4px solid #cc9966;
-  border-bottom: 4px solid #cc9966;
+  border-top: 12px solid #cc9966;
+  border-bottom: 12px solid #cc9966;
   position: relative;
 }
 
@@ -118,12 +118,12 @@ body {
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(100%);
   }
 }
 
 .scrolling-image-wrapper {
-  width: 100vw;
+  width: 50vw;
   overflow: hidden;
   background-color: #fff;
   padding: 10px 0;
@@ -136,7 +136,7 @@ body {
 }
 
 .scrolling-images img {
-  width: 220px;
+  width: 50px;
   height: auto;
   margin: 0 20px;
   border-radius: 10px;
@@ -147,7 +147,7 @@ body {
   0% {
     transform: translateX(-100%);
   }
-  100% {
+  50% {
     transform: translateX(100%);
   }
 }
