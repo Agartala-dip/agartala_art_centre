@@ -89,8 +89,8 @@ body {
 
 .greeting-text {
   color: #d84315;
-  font-size: 6px;
-  margin-top: 6px;
+  font-size: 10px;
+  margin-top: 10px;
   font-weight: bold;
 }
 .scrolling-wrapper {
@@ -106,7 +106,7 @@ body {
   white-space: nowrap;
   font-size: 24px;
   color: #c0392b;
-  animation: scrollText 15s linear infinite;
+  animation: scrollText 35s linear infinite;
 }
 
 @keyframes scrollText {
@@ -116,9 +116,6 @@ body {
   100% {
     right: 100%;
   }
-}
-.scrolling-image-wrapper {
-
 }
 /* Intro and other sections */
 .intro, .mission, .highlights {
