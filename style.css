@@ -93,6 +93,38 @@ body {
   margin-top: 20px;
   font-weight: bold;
 }
+.scrolling-text {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.scrolling-text span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scrollText 15s linear infinite;
+}
+.scrolling-image {
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.scrolling-image img {
+  animation: scrollImage 20s linear infinite;
+  margin-right: 20px;
+}
+
+@keyframes scrollImage {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+
 
 /* Fade-in animation */
 @keyframes fadeIn {
