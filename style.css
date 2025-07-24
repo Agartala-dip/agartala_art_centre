@@ -244,55 +244,35 @@ body {
   color: #444;
   margin-bottom: 15px;
 }
-<style>
-.scrolling-gallery {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  gap: 10px;
-  padding: 10px;
-}
+  .gallery {
+      padding: 20px;
+      background-color: #fff;
+    }
 
-.gallery-item {
-  flex: 0 0 auto;
-  scroll-snap-align: start;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-}
+    .scrolling-gallery {
+      display: flex;
+      overflow-x: auto;
+      gap: 10px;
+      padding: 10px;
+    }
 
-.gallery-item img {
-  height: 200px;
-  width: auto;
-  display: block;
-}
-</style>
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-}
+    .gallery-item {
+      flex: 0 0 auto;
+      scroll-snap-align: start;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
 
-.gallery-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center;
-  margin-top: 20px;
-}
+    .gallery-item img {
+      height: 200px;
+      width: auto;
+      display: block;
+    }
 
-.gallery-item img {
-  width: 250px;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease;
-}
-
-.gallery-item img:hover {
-  transform: scale(1.05);
-}
+    .gallery h1, .gallery p {
+      text-align: center;
+    }
 /* Events Section */
 .events {
   max-width: 500px;
