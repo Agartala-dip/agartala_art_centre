@@ -246,33 +246,45 @@ body {
 }
   .gallery {
       padding: 20px;
-      background-color: #fff;
+ <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
     }
 
-    .scrolling-gallery {
+    .scrolling-wrapper {
       display: flex;
       overflow-x: auto;
+      white-space: nowrap;
+      scroll-behavior: smooth;
       gap: 10px;
       padding: 10px;
+      background: #f8f8f8;
     }
 
-    .gallery-item {
+    .scrolling-wrapper::-webkit-scrollbar {
+      height: 6px;
+    }
+
+    .scrolling-wrapper::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 5px;
+    }
+
+    .scrolling-image {
       flex: 0 0 auto;
-      scroll-snap-align: start;
+      height: 200px;
       border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     }
 
-    .gallery-item img {
-      height: 200px;
+    .scrolling-image img {
+      height: 100%;
       width: auto;
       display: block;
     }
-
-    .gallery h1, .gallery p {
-      text-align: center;
-    }
+  </style>
 /* Events Section */
 .events {
   max-width: 500px;
