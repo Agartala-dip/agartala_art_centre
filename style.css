@@ -162,7 +162,7 @@ body {
   border-radius: 10px;
 }
 
-/* Keyframes for left-to-right animation */
+/* Keyframes for right-to-left animation */
 @keyframes scrollimage {
   0% {
     right: 100%;
