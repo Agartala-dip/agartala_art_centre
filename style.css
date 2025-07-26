@@ -1,3 +1,111 @@
+/* Basic Reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #333;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  justify-content: center;
+}
+.navbar ul li {
+  margin: 0 15px;
+}
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Banner */
+.banner {
+  text-align: center;
+  background: #f5f5f5;
+  padding: 20px;
+}
+.logo-image {
+  height: 100px;
+}
+
+/* Scrolling Admission Text */
+.scrolling-container {
+  background: #222;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.scrolling-text {
+  display: inline-block;
+  padding: 10px;
+  color: #fff;
+  animation: scroll-left 15s linear infinite;
+}
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Scrolling Image Section */
+.scrolling-images {
+  width: 100%;
+  overflow: hidden;
+  background-color: #eee;
+  padding: 15px 0;
+}
+.image-track {
+  display: flex;
+  gap: 20px;
+  animation: scrollImages 30s linear infinite;
+}
+.image-track img {
+  height: 150px;
+  flex-shrink: 0;
+  border-radius: 10px;
+}
+
+/* Keyframe for right-to-left scroll */
+@keyframes scrollImages {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Sections */
+.intro, .mission, .highlights, .social-media {
+  padding: 20px;
+}
+
+/* Social Icons */
+.social-icons a {
+  margin: 0 10px;
+  font-size: 24px;
+  color: #222;
+  text-decoration: none;
+}
+.social-icons a:hover {
+  color: #007bff;
+}
+
+/* Footer */
+.footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
 /* Body layout */
 body {
   margin: 0;
