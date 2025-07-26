@@ -1,45 +1,4 @@
-/* Basic Reset */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
 
-/* Navigation Bar */
-.navbar {
-  background-color: #333;
-}
-.navbar ul {
-  display: flex;
-  list-style: none;
-  padding: 10px;
-  margin: 0;
-  justify-content: center;
-}
-.navbar ul li {
-  margin: 0 15px;
-}
-.navbar ul li a {
-  color: white;
-  text-decoration: none;
-}
-
-/* Banner */
-.banner {
-  text-align: center;
-  background: #f5f5f5;
-  padding: 20px;
-}
-.logo-image {
-  height: 100px;
-}
-
-/* Scrolling Admission Text */
-.scrolling-container {
-  background: #222;
-  overflow: hidden;
-  white-space: nowrap;
-}
 .scrolling-text {
   display: inline-block;
   padding: 10px;
