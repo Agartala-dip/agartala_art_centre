@@ -140,7 +140,37 @@ body {
     left: -100%;
   }
 }
+/* Scrolling Images Container */
+.scrolling-images {
+  width: 100%;
+  overflow: hidden;
+  background-color: #f0f0f0;
+  padding: 10px 0;
+}
 
+/* Image Track Animation */
+.image-track {
+  display: flex;
+  gap: 20px;
+  animation: scrollLeft 30s linear infinite;
+}
+
+/* Images inside the track */
+.image-track img {
+  height: 150px;
+  flex-shrink: 0;
+  border-radius: 10px;
+}
+
+/* Keyframes for right-to-left animation */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 /* Intro, Mission, Highlights */
 .intro, .mission, .highlights {
   max-width: 900px;
